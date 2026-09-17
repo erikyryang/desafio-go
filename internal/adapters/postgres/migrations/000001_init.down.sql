@@ -1,0 +1,15 @@
+DROP TRIGGER IF EXISTS outbox_events_guard ON outbox_events;
+DROP FUNCTION IF EXISTS outbox_events_guard();
+DROP TABLE IF EXISTS outbox_events;
+DROP TABLE IF EXISTS inbox_messages;
+DROP TRIGGER IF EXISTS wallet_ledger_entries_guard ON wallet_ledger_entries;
+DROP FUNCTION IF EXISTS wallet_ledger_entries_guard();
+DROP TABLE IF EXISTS wallet_ledger_entries;
+DROP TYPE IF EXISTS ledger_direction;
+DROP TRIGGER IF EXISTS wager_transactions_guard ON wager_transactions;
+DROP FUNCTION IF EXISTS wager_transactions_guard();
+DROP TABLE IF EXISTS wager_transactions;
+DROP TYPE IF EXISTS wager_status;
+DROP TYPE IF EXISTS wager_kind;
+DROP TYPE IF EXISTS wager_origin;
+DROP TABLE IF EXISTS wallets;
